@@ -43,7 +43,7 @@ export const App = () => {
         title='Task 4. Transaction history'
       >
         <TransactionHistory
-          transactions={transactions}
+          items={transactions}
         />
       </Section>
     </>
