@@ -18,6 +18,7 @@ export const App = () => {
           stats={user.stats}
         />
       </Section>
+
       <Section
         title='Task 2. Statistics'
       >
