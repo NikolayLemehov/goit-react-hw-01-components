@@ -1,16 +1,22 @@
+import ProfileCard from './ProfileCard/ProfileCard';
+import user from '../json/user.json'
+import Section from './Section/Section';
+console.log(user)
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template!
-    </div>
+    <>
+      <Section
+        title='1. Profile'
+      >
+        <ProfileCard
+          username={user.username}
+          tag={user.tag}
+          location={user.location}
+          avatar={user.avatar}
+          stats={user.stats}
+        />
+      </Section>
+    </>
   );
 };
